@@ -326,7 +326,7 @@ jobs:
             mv "release/gotohp.deb" "release/gotohp_amd64.deb"
           fi
 
-          # Build the CLI-only application (no WebView/GTK required)
+          # Build the CLI-only application (no WebView/GTK runtime required)
           wails3 task linux:build:cli PRODUCTION=true
           mv bin/gotohp-cli "release/gotohp-cli_amd64"
 

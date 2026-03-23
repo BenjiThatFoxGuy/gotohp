@@ -110,7 +110,7 @@ tasks:
       OUTPUTFILE: '{{.ROOT_DIR}}/build/linux/{{.APP_NAME}}.desktop'
 
   build:cli:
-    summary: Builds the CLI-only application for Linux (no Wails/WebView dependencies)
+    summary: Builds the CLI-only application for Linux (no WebView/GTK runtime dependencies)
     dir: '{{.ROOT_DIR}}'
     deps:
       - task: common:go:mod:tidy
